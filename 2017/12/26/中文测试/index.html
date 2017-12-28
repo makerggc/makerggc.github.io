@@ -138,10 +138,8 @@ var _hmt = _hmt || [];
 	  <p>第一次搭建博客，搞了一周多终于要写一篇博文测试一下了，顺便学习一下Markdown的基本语法。(start:2017-12-26 08:46:37)</p>
 <h1 id="一、区块元素"><a href="#一、区块元素" class="headerlink" title="一、区块元素"></a>一、区块元素</h1><h2 id="1-段落和换行"><a href="#1-段落和换行" class="headerlink" title="1.段落和换行"></a>1.段落和换行</h2><p>一个 Markdown 段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（空行的定义是显示上看起来像是空的，便会被视为空行。比方说，若某一行只包含空格和制表符，则该行也会被视为空行）。普通段落不该用空格或制表符来缩进。</p>
 <p>「由一个或多个连续的文本行组成」这句话其实暗示了 Markdown 允许段落内的强迫换行（插入换行符），这个特性和其他大部分的 text-to-HTML 格式不一样（包括 Movable Type 的「Convert Line Breaks」选项），其它的格式会把每个换行符都转成 <br> 标签。</p>
-<p>如果你确实想要依赖 Markdown 来插入 <br> 标签的话，在插入处先按入两个以上的空格然后回车。</p>
-<p>的确，需要多费点事（多加空格）来产生 <br> ，但是简单地「每个换行都转换为 <br>」的方法在 Markdown 中并不适合， Markdown 中 email 式的 区块引用 和多段落的 列表 在使用换行来排版的时候，不但更好用，还更方便阅读。</p>
+<p>如果你确实想要依赖 Markdown 来插入 <br> 标签的话，在插入处先按入两个以上的空格然后回车。<br><a id="more"></a><br>的确，需要多费点事（多加空格）来产生 <br> ，但是简单地「每个换行都转换为 <br>」的方法在 Markdown 中并不适合， Markdown 中 email 式的 区块引用 和多段落的 列表 在使用换行来排版的时候，不但更好用，还更方便阅读。</p>
 <hr>
-<a id="more"></a>
 <h2 id="2-标题"><a href="#2-标题" class="headerlink" title="2.标题"></a>2.标题</h2><h3 id="1-类atx形式："><a href="#1-类atx形式：" class="headerlink" title="(1)类atx形式： (###)"></a>(1)类atx形式： (###)</h3><pre><code>#### 这是标题h4 #### (后面的 # 可以写也可以不写，如果你有强迫症。。。)
 ##### 这是标题h5
 ###### 这是标题h6
@@ -631,7 +629,7 @@ _   底线
 <pre><code>&lt;address@example.com&gt;
 </code></pre><p>Markdown 会转成：</p>
 <pre><code>&lt;a href=&quot;mailto:address@example.com&quot;&gt;address@example.com&lt;/a&gt;
-</code></pre><h6 id="Markdown-表示：-34"><a href="#Markdown-表示：-34" class="headerlink" title="Markdown 表示："></a>Markdown 表示：</h6><p><a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#97;&#100;&#100;&#x72;&#x65;&#115;&#115;&#x40;&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;">&#97;&#100;&#100;&#x72;&#x65;&#115;&#115;&#x40;&#x65;&#120;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+</code></pre><h6 id="Markdown-表示：-34"><a href="#Markdown-表示：-34" class="headerlink" title="Markdown 表示："></a>Markdown 表示：</h6><p><a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x61;&#x64;&#100;&#114;&#x65;&#115;&#115;&#64;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x61;&#x64;&#100;&#114;&#x65;&#115;&#115;&#64;&#x65;&#x78;&#97;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a></p>
 <p>在浏览器里面，这段字串（其实是 <a href="mailto:address@example.com" target="_blank" rel="noopener">address@example.com</a>）会变成一个可以点击的「address@example.com」链接。</p>
 <p>（这种作法虽然可以糊弄不少的机器人，但并不能全部挡下来，不过总比什么都不做好些。不管怎样，公开你的信箱终究会引来广告信件的。）</p>
 <p>写到这也差不多了，第一次写的这个是在一个Markdown<a href="https://dillinger.io/" title="dillinger.io" target="_blank" rel="noopener">在线编辑器</a>上写的。<br>Markdown官方教程：<a href="http://www.markdown.cn/" target="_blank" rel="noopener">http://www.markdown.cn/</a></p>
